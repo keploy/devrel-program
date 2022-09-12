@@ -1,6 +1,6 @@
 .navbar{
     padding: 0.5rem 11rem;
-    background-color: #FFFFFF;
+    /* background-color: #FFFFFF; */
 }
 
 .keployLogo{
@@ -145,7 +145,7 @@
     /* top: 100%; */
     width: 74px;
     height: 36px;
-    margin: 20px auto 0 auto;
+    margin: 0 auto 0 auto;
     overflow: hidden;
   }
   
@@ -212,7 +212,7 @@
     top: -28px;
     right: 4px;
     left: auto;
-    background-color: #f44336;
+    background-color: #ff6200;
   }
   
   #button-4 .checkbox:checked + .knobs:before {
@@ -227,3 +227,12 @@
     background-color: #fcebeb;
   }
   
+
+
+  #light{
+    background: rgb(255, 0, 0);
+    }
+  
+  #dark   {
+      background: #0C4160;
+    }

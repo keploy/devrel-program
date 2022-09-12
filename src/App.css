@@ -28,3 +28,19 @@
 /* .section {
 	scroll-snap-align: start end;
 } */
+
+#light{
+    background: #fff;
+	color:black;
+    }
+  
+  #dark  {
+      background: #4e4e4e;
+	  color: white;
+    }
+
+	.bg  {
+		height: 100vh;
+		width:100vw;
+	  }
+  

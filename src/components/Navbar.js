@@ -4,11 +4,18 @@ import Github from '../assets/images/github.png';
 import Linkedin from '../assets/images/linkedin.svg';
 import Slack from '../assets/images/slack.svg';
 import Youtube from '../assets/images/youtube.svg';
-import './Navbar.css'; 
+import './Navbar.css';
+
+import { useState } from 'react';
 
 
-const Navbar = () => {
-  
+const Navbar = ({theme, setTheme}) => {
+
+    const toggleTheme = () => {
+      setTheme(!theme);
+    };
+
+
     return (
         <>
             <nav className="navbar navbar-expand-lg fixed-top navbar-light  ">
@@ -39,15 +46,13 @@ const Navbar = () => {
                               </li>
                             </li>
 
-                            <li>
-                              <div class="toggle-button-cover ">
-                                {/* <div class="button-cover"> */}
+                            <li className="d-flex align-items-center">
+                              {/* <div class="toggle-button-cover "> */}
                                   <div class="button r" id="button-4">
-                                    <input type="checkbox" class="checkbox" />
+                                    <input type="checkbox" class="checkbox" onChange={toggleTheme}/>
                                     <div class="knobs"></div>
                                     <div class="layer"></div>
-                                  {/* </div> */}
-                                </div>
+                                {/* </div> */}
                               </div>
                             </li>
 
@@ -63,12 +68,16 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>  
-
- 
         </>
 
     );
 
 };
+// const toggle = document.querySelector('#toggle');
+
+// toggle.addEventListener('change', () => {
+//   document.body.classList.toggle('dark');
+// })
+
 
 export default Navbar;
