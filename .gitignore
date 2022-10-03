@@ -6,6 +6,8 @@
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
+node_modules/
+
 # User-specific stuff
 .idea/
 .idea/**/workspace.xml
@@ -178,3 +180,4 @@ Temporary Items
 # Support for Project snippet scope
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,linux,jetbrains,visualstudiocode
+

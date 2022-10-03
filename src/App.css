@@ -1,0 +1,16 @@
+#light{
+    background: #fff;
+	color:black;
+    }
+  
+#dark  {
+      background: #818181;
+      /* background: #b4b4b4; */
+	  color: white !important;
+    }
+
+.bg  {
+	height: 100vh;
+	width:100vw;
+	}
+  
