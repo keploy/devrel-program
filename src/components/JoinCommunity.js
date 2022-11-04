@@ -28,4 +28,4 @@ const JoinCommunity = () => {
     );
 };
 
-export default JoinCommunity;
+export default JoinCommunity;  
