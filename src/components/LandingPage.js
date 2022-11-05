@@ -11,7 +11,7 @@ const LandingPage = () => {
                         <div className="landingPageContent">
                             <h2 className="landingPageHeader">Keploy Developer Relations Program</h2>
                             <p className="landingPageSubHeader">Get into the world of DevRels and experience of being one for a month</p>
-                            <a href="" target="_blank">
+                            <a href="https://keploy-program.notion.site/Keploy-DevRel-Program-ddaf87544acb4c84afb9b781016d5e92" target="_blank">
                                 <button type="button" className="btn btn-dark landingPageButton px-4 py-2">
                                 Get Started
                                 </button>
