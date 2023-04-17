@@ -83,6 +83,8 @@ body {
     color: #757575;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+
 }
 
 
@@ -528,11 +530,11 @@ form,
     right: 0;
     bottom: 0;
     background: #050505;
-    z-index: 800;
+    z-index: 9999999;
     height: 100%;
     width: 100%;
     display: table;
-}
+}   
 
 .no-js #preloader, .oldie #preloader {
     display: none;
@@ -3887,4 +3889,62 @@ html.no-csstransitions .home-content__main {
 
 .countdown-timer{
     pointer-events: none;
+}
+
+.modal{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 99;
+}
+
+.modal-body{
+  width: 80%;
+  height: 80%;
+  border: 1px solid black;
+  /* background-image: url('https://media.licdn.com/dms/image/D4D22AQHJDENz9W2rxA/feedshare-shrink_800/0/1681714706793?e=1684368000&v=beta&t=XhxZW4l2cZSrhc46UMIk9tLtp34QmQn0oI98OSOjgpc'); */
+  /* background-size: contain; */
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+}
+.modal-close{
+    position: absolute;
+    /* top: 0; */
+    /* right: 1px; */
+    text-align: right;
+    z-index: 1;
+    width:80%;
+    padding:10px;
+}
+
+.modal-close button{
+    color:#f37d36;
+    background-color: white;
+}
+
+.modal-img{
+    height:100%;
+    width: 100%;
+    position: relative;
+}
+
+.modal-img-mob{
+    display: none;
+    height:100%;
+    width: 100%;
+    position: relative;
+}
+
+@media screen and (max-width:992px){
+    .modal-img-mob{
+        display: block;
+    }
+
+    .modal-img{
+        display: none;
+    }
 }
