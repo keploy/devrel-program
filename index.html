@@ -133,6 +133,21 @@
         </style>
       </head>
       <body id="top">
+        <div class="modal" data-aos="fade-up">
+          <div class="modal-body">
+            <!-- <div class="modal-close">Close</div> -->
+            <div class="modal-close">
+              <button onclick="modalClose()">Close</button>
+
+            </div>
+            <img src="./images/cohort3.png" class="modal-img" />
+            <img src="./images/cohort3mob.png" class="modal-img-mob" />
+            <!-- <div> -->
+              <!-- <img src="https://media.licdn.com/dms/image/D4D22AQHJDENz9W2rxA/feedshare-shrink_800/0/1681714706793?e=1684368000&v=beta&t=XhxZW4l2cZSrhc46UMIk9tLtp34QmQn0oI98OSOjgpc" class="modal-img"/> -->
+            <!-- </div> -->
+          </div>
+        </div>
+        <div style="display:relative">
         <header class="s-header">
           <div class="header-logo">
             <a class="site-logo" href="index.html">
@@ -169,7 +184,7 @@
         <!-- home
           ================================================== -->
         <section id="home" class="s-home target-section" data-parallax="scroll"  data-natural-width=3000 data-natural-height=2000 data-position-y=center>
-          <div class="overlay"></div>
+          <div class="overlay" ></div>
           <div class="shadow-overlay"></div>
           <div class="home-content">
             <div class="row home-content__main">
@@ -178,8 +193,8 @@
               </h1>
               <h3>Get into the world of DevRels and experience <br/> of being one for a month</h3>
               <div class="home-content__buttons">
-                <a href="https://keploy-program.notion.site/Keploy-DevRel-Program-ddaf87544acb4c84afb9b781016d5e92" class="smoothscroll btn btn--stroke">
-                Join
+                <a href="https://bit.ly/3o8sQTD" class=" btn btn--stroke">
+                Apply
                 </a>
                 <a href="#about" class="smoothscroll btn btn--stroke">
                 Know More
@@ -298,20 +313,19 @@
         </section>
         <!-- end s-services -->
         <!-- NEXT DEVREL COHORT -->
-        <!-- <section id="next" class="s-services" style="margin-top:-200px">
+        <section id="next" class="s-services" style="margin-top:-200px">
           <div class="intro-wrap">
             <div class="row section-header has-bottom-sep light-sep" data-aos="fade-up">
               <div class="col-full">
                 <h3 class="subhead">DevRel Cohort 3.0</h3>
-                <h1 class="display-2 display-2--dark">The Next Cohort Begins In</h1>
+                <h1 class="display-2 display-2--dark">Applications Close In</h1>
               </div>
             </div>
-            <script src="https://cdn.logwork.com/widget/countdown.js"></script>
-            <div data-aos="fade-up">
-              <a href="https://logwork.com/countdown-y413" class="countdown-timer" style="margin-top:-130px" data-timezone="Asia/Kolkata" data-textcolor="#fff" data-date="2023-04-15 00:00" data-background="#644a3c" data-digitscolor="#ff904d" data-unitscolor="#ff904d">T</a>
-            </div>
+<script src="https://cdn.logwork.com/widget/countdown.js"></script>
+<div>
+<a href="https://logwork.com/countdown-yt11" class="countdown-timer" style="margin-top:-130px" data-timezone="Asia/Kolkata" data-textcolor="#fff" data-date="2023-04-30 12:00" data-background="#644a3c" data-digitscolor="#ff904d" data-unitscolor="#ff904d"><span style="color:white">.</span></a>
           </div>
-        </section> -->
+        </section>
         <!-- works
           ================================================== -->
         <section id='community' class="s-works">
@@ -680,5 +694,17 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <script>
+          function modalClose(){
+            $('.modal:first').css('display','none');
+            $('body').css('overflow','auto');
+          }
+          $(document).on('keydown scroll mousewheel touchmove', function(event) {
+            if ($('#modal').is(':visible')) {
+              event.preventDefault();
+            }
+          });
+        </script>  
+      </div>
       </body>
     </html>
