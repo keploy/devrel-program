@@ -32,9 +32,9 @@
             // $('html, body').animate({ scrollTop: 0 }, 'normal');
 
             // will first fade out the loading animation 
-            $("#loader").fadeOut("slow", function () {
+            $("#loader").fadeOut("fast", function () {
                 // will fade out the whole DIV that covers the website.
-                $("#preloader").delay(300).fadeOut("slow");
+                $("#preloader").delay(300).fadeOut("fast");
             });
 
             // for hero content animations 
@@ -143,7 +143,7 @@
                 }
 
                 // initialize PhotoSwipe
-                var lightBox = new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options);
+                var lightBox = new clPhotoswipe($pswp, PhotoSwipeUI_Default, items, options);
                 lightBox.init();
             });
 
@@ -169,7 +169,7 @@
                         var $this = $(this);
 
                         $({ Counter: 0 }).animate({ Counter: $this.text() }, {
-                            duration: 4000,
+                            duration: 3000,
                             easing: 'swing',
                             step: function (curValue) {
                                 $this.text(Math.ceil(curValue));
@@ -383,9 +383,9 @@
 
         AOS.init({
             offset: 200,
-            duration: 600,
+            duration: 200,
             easing: 'ease-in-sine',
-            delay: 300,
+            delay: 100,
             once: true,
             disable: 'mobile'
         });
@@ -433,7 +433,7 @@
         var pxShow = 500,         // height on which the button will show
             fadeInTime = 400,         // how slow/fast you want the button to show
             fadeOutTime = 400,         // how slow/fast you want the button to hide
-            scrollSpeed = 300,         // how slow/fast you want the button to scroll to top. can be a value, 'slow', 'normal' or 'fast'
+            scrollSpeed = 500,         // how slow/fast you want the button to scroll to top. can be a value, 'slow', 'normal' or 'fast'
             goTopButton = $(".go-top")
 
         // Show or hide the sticky footer button
