@@ -24,7 +24,7 @@ As you help Keploy achieve its mission for the future, you will also receive gre
 
 ### Application Process
 
-1. Apply [here](https://bit.ly/KeployDevRel) to be a part of ***Keploy’s DevRel Program 👉*** [https://bit.ly/KeployDevRel](https://bit.ly/KeployDevRel)
+1. Apply [here](https://forms.gle/BmnmzSfuVydG7CoWA) to be a part of ***Keploy’s DevRel Program 👉*** [https://bit.ly/KeployDevRel](https://forms.gle/BmnmzSfuVydG7CoWA)
 2. Once your application is submitted, you can hear from us within a week or two regarding the status of the application.
 3. If your application is shortlisted, you will be invited for contribution period, which generally last a month.
 

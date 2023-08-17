@@ -19,7 +19,7 @@
  *
  * ------------------------------------------------------------------- */
 [data-aos][data-aos][data-aos-duration='50'], body[data-aos-duration='50'] [data-aos] {
-    transition-duration: 50ms;
+    transition-duration: 25ms;
 }
 
 [data-aos][data-aos][data-aos-delay='50'], body[data-aos-delay='50'] [data-aos] {
@@ -27,7 +27,7 @@
 }
 
 [data-aos][data-aos][data-aos-delay='50'].aos-animate, body[data-aos-delay='50'] [data-aos].aos-animate {
-    transition-delay: 50ms;
+    transition-delay: 25ms;
 }
 
 [data-aos][data-aos][data-aos-duration='100'], body[data-aos-duration='100'] [data-aos] {
@@ -1133,8 +1133,8 @@
     opacity: 0.001;
     will-change: opacity;
     /* for open/close transition */
-    -webkit-transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
-    transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
+    -webkit-transition: opacity 222ms cubic-bezier(0.4, 0, 0.22, 1);
+    transition: opacity 222ms cubic-bezier(0.4, 0, 0.22, 1);
 }
 
 .pswp--open {
@@ -1220,15 +1220,15 @@
     -ms-transform-origin: left top;
     transform-origin: left top;
     /* for open/close transition */
-    -webkit-transition: -webkit-transform 333ms cubic-bezier(0.4, 0, 0.22, 1);
-    transition: transform 333ms cubic-bezier(0.4, 0, 0.22, 1);
+    -webkit-transition: -webkit-transform 222ms cubic-bezier(0.4, 0, 0.22, 1);
+    transition: transform 222ms cubic-bezier(0.4, 0, 0.22, 1);
 }
 
 .pswp__bg {
     will-change: opacity;
     /* for open/close transition */
-    -webkit-transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
-    transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
+    -webkit-transition: opacity 222ms cubic-bezier(0.4, 0, 0.22, 1);
+    transition: opacity 222ms cubic-bezier(0.4, 0, 0.22, 1);
 }
 
 .pswp--animated-in .pswp__bg, .pswp--animated-in .pswp__zoom-wrap {
@@ -1712,13 +1712,13 @@ a.pswp__share--download:hover {
 }
 
 .pswp--css_animation .pswp__preloader--active .pswp__preloader__icn {
-    -webkit-animation: clockwise 500ms linear infinite;
-    animation: clockwise 500ms linear infinite;
+    -webkit-animation: clockwise 250ms linear infinite;
+    animation: clockwise 250ms linear infinite;
 }
 
 .pswp--css_animation .pswp__preloader--active .pswp__preloader__donut {
-    -webkit-animation: donut-rotate 1000ms cubic-bezier(0.4, 0, 0.22, 1) infinite;
-    animation: donut-rotate 1000ms cubic-bezier(0.4, 0, 0.22, 1) infinite;
+    -webkit-animation: donut-rotate 500ms cubic-bezier(0.4, 0, 0.22, 1) infinite;
+    animation: donut-rotate 500ms cubic-bezier(0.4, 0, 0.22, 1) infinite;
 }
 
 .pswp--css_animation .pswp__preloader__icn {
@@ -1855,8 +1855,8 @@ a.pswp__share--download:hover {
 .pswp__caption, .pswp__top-bar, .pswp--has_mouse .pswp__button--arrow--left, .pswp--has_mouse .pswp__button--arrow--right {
     -webkit-backface-visibility: hidden;
     will-change: opacity;
-    -webkit-transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
-    transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
+    -webkit-transition: opacity 222ms cubic-bezier(0.4, 0, 0.22, 1);
+    transition: opacity 222ms cubic-bezier(0.4, 0, 0.22, 1);
 }
 
 
