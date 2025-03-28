@@ -46,34 +46,28 @@ export default function Hero() {
                 being one for a month
               </p>
               <div
-                className="gap-2 max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center md:space-x-4 lg:space-x-4 mt-20 flex flex-col sm:flex-row space-y-4 sm:space-y-0"
+                className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center md:space-x-4 lg:space-x-4 mt-20"
                 data-aos="zoom-y-out"
                 data-aos-delay="300"
               >
-                <div className={`border w-full sm:w-auto ${darkMode ? "border-gray-600 bg-gray-800" : "border-primary-400 bg-primary-300"} rounded-full overflow-hidden p-1 border-opacity-40 relative transition-all group mb-4 sm:mb-0`}>
-                  <span className="absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 bg-gray-100 opacity-60 transition-transform duration-1000 ease-out group-hover:translate-x-[-500%]" />
-                  <Link
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSdu58gJWYZ1huJzAGXi1LZ4vOuK_kriK4Eda7ktiHcHF41KBQ/closedform"
-                    target="_blank"
-                    className="btn-sm py-2 px-4 text-gray-200 rounded-md overflow-hidden border-opacity-40 relative transition-all group flex items-center justify-center"
-                    rel="noopener noreferrer"
-                  >
-                    <span>Apply</span>
-                    <OpenInNewIcon className="transition-all duration-500 ease-out group-hover:scale-110 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 h-5 w-5 ml-2" />
-                  </Link>
-                </div>
-                <div className={`border w-full sm:w-auto ${darkMode ? "border-gray-600 bg-gray-800" : "border-primary-400 bg-primary-300"} rounded-full overflow-hidden p-1 border-opacity-40 relative transition-all group`}>
-                  <span className="absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 bg-gray-100 opacity-60 transition-transform duration-1000 ease-out group-hover:translate-x-[-500%]" />
-                  <Link
-                    href="https://keploy-program.notion.site/Keploy-DevRel-Program-ddaf87544acb4c84afb9b781016d5e92"
-                    target="_blank"
-                    className="btn-sm py-2 px-4 text-gray-200 rounded-md overflow-hidden border-opacity-40 relative transition-all group flex items-center justify-center"
-                    rel="noopener noreferrer"
-                  >
-                    <span>Know More</span>
-                    <OpenInNewIcon className="transition-all duration-500 ease-out group-hover:scale-110 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 h-5 w-5 ml-2" />
-                  </Link>
-                </div>
+                <Link
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdu58gJWYZ1huJzAGXi1LZ4vOuK_kriK4Eda7ktiHcHF41KBQ/closedform"
+                  target="_blank"
+                  className="gap-2 text-sm font-medium bg-gradient-to-r from-orange-500 to-red-500 hover:from-red-500 hover:to-orange-500 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out text-white px-8 py-2.5 flex items-center justify-center"
+                  rel="noopener noreferrer"
+                >
+                  <span>Apply</span>
+                  <OpenInNewIcon className="transition-all duration-500 ease-out group-hover:scale-110 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 h-5 w-5 ml-2" />
+                </Link>
+                <Link
+                  href="https://keploy-program.notion.site/Keploy-DevRel-Program-ddaf87544acb4c84afb9b781016d5e92"
+                  target="_blank"
+                  className="gap-2 text-sm font-medium bg-gradient-to-r from-orange-500 to-red-500 hover:from-red-500 hover:to-orange-500 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out text-white px-8 py-2.5 flex items-center justify-center"
+                  rel="noopener noreferrer"
+                >
+                  <span>Know More</span>
+                  <OpenInNewIcon className="transition-all duration-500 ease-out group-hover:scale-110 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 h-5 w-5 ml-2" />
+                </Link>
               </div>
             </div>
           </div>
