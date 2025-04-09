@@ -10,8 +10,11 @@ const DarkModeContext = createContext<DarkModeContextType | undefined>(undefined
 
 export const DarkModeProvider = ({ children }: { children: ReactNode }) => {
   const [darkMode, setDarkMode] = useState<boolean>(() => {
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-    return isDarkMode;
+    if (typeof window !== 'undefined') {
+      const isDarkMode = localStorage.getItem('darkMode') === 'true';
+      return isDarkMode;
+    }
+    return false;
   });
 
   useEffect(() => {
@@ -25,7 +28,9 @@ export const DarkModeProvider = ({ children }: { children: ReactNode }) => {
   const toggleDarkMode = () => {
     const newDarkMode = !darkMode;
     setDarkMode(newDarkMode);
-    localStorage.setItem('darkMode', String(newDarkMode));
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('darkMode', String(newDarkMode));
+    }
   };
 
   return (

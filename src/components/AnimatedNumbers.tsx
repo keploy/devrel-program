@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { useDarkMode } from "@/components/utils/DarkModeContext"; 
+import { useDarkMode } from "@/components/utils/DarkModeContext";
 
 const AnimatedNumbers = () => {
   const { darkMode } = useDarkMode(); // Access the dark mode state
@@ -11,14 +11,14 @@ const AnimatedNumbers = () => {
     onboarded: 0,
   });
 
-  const targets = {
-    cohorts: 6,
-    applications: 5000,
-    devRels: 330,
-    onboarded: 15,
-  };
-
   useEffect(() => {
+    const targets = {
+      cohorts: 6,
+      applications: 5000,
+      devRels: 330,
+      onboarded: 15,
+    };
+
     const duration = 2000; // Duration for the animation in milliseconds
     const startTime = performance.now();
 
@@ -39,7 +39,7 @@ const AnimatedNumbers = () => {
     };
 
     requestAnimationFrame(animate);
-  }, []);
+  }, []); // Empty dependency array to run only once
 
   return (
     <div className="flex justify-center space-x-8">
@@ -49,7 +49,7 @@ const AnimatedNumbers = () => {
       </div>
       <div className={`h-full w-px bg-gray-300 ${darkMode ? 'bg-gray-600' : 'bg-gray-300'}`}></div>
       <div className="text-center">
-        <p className={`text-7xl font-boldtext-transparent bg-clip-text ${darkMode ? "bg-gradient-to-r from-gradient-500 to-gradient-200" : "bg-gradient-to-r from-gradient-500 to-gradient-200"} text-primary-400`}>{counts.applications}</p>
+        <p className={`text-7xl font-bold text-transparent bg-clip-text ${darkMode ? "bg-gradient-to-r from-gradient-500 to-gradient-200" : "bg-gradient-to-r from-gradient-500 to-gradient-200"} text-primary-400`}>{counts.applications}</p>
         <p className={`text-lg ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Applications</p>
       </div>
       <div className={`h-full w-px bg-gray-300 ${darkMode ? 'bg-gray-600' : 'bg-gray-300'}`}></div>

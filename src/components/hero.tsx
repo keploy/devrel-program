@@ -1,21 +1,10 @@
 "use client";
 import Link from "next/link";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
-import { useEffect, useState } from "react";
 import { useDarkMode } from "@/components/utils/DarkModeContext"; // Import the dark mode context
 
 export default function Hero() {
-  const [isMobile, setIsMobile] = useState(false);
   const { darkMode } = useDarkMode(); // Access the dark mode state
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 1038);
-    };
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   return (
     <section className={`relative h-screen ${darkMode ? "bg-neutral-900" : "bg-neutral-100"}`}>

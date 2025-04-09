@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/hero";
 import Intro from "@/components/Intro";
 import Join from "@/components/Join";
-import NewsletterSignup from "@/components/Newsletter";
+// import NewsletterSignup from "@/components/Newsletter";
 import Testimonial from "@/components/Testimonials";
 import { useDarkMode } from "@/components/utils/DarkModeContext";
 
@@ -18,7 +18,7 @@ export default function Home() {
         <Content />
         <Testimonial />
         <Join />
-        <NewsletterSignup />
+        {/* <NewsletterSignup /> */}
       </div>
   );
 }
