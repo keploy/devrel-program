@@ -1,5 +1,5 @@
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen?logo=github)](CODE_OF_CONDUCT.md) 
-[![Slack](.github/slack.svg)](https://join.slack.com/t/keploy/shared_invite/zt-12rfbvc01-o54cOG0X1G6eVJTuI_orSA)
+[![Slack](.github/slack.svg)](https://join.slack.com/t/keploy/shared_invite/zt-357qqm9b5-PbZRVu3Yt2rJIa6ofrwWNg)
 [![License](.github/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 # Keploy
@@ -43,10 +43,10 @@ As you help Keploy achieve its mission for the future, you will also receive gre
     **A:** We understand and respect your decision, if you are willing to leave the devrel program, please connect with your Program Buddy and they will start the offboarding process.
     
 
-**Contact Us** ➖ Our [Slack](https://join.slack.com/t/keploy/shared_invite/zt-12rfbvc01-o54cOG0X1G6eVJTuI_orSA)
+**Contact Us** ➖ Our [Slack](https://join.slack.com/t/keploy/shared_invite/zt-357qqm9b5-PbZRVu3Yt2rJIa6ofrwWNg)
 
 ## Community support
 We'd love to collaborate with you to make Keploy great. To get started:
-* [Slack](https://join.slack.com/t/keploy/shared_invite/zt-12rfbvc01-o54cOG0X1G6eVJTuI_orSA) - Discussions with the community and the team.
+* [Slack](https://join.slack.com/t/keploy/shared_invite/zt-357qqm9b5-PbZRVu3Yt2rJIa6ofrwWNg) - Discussions with the community and the team.
 * [GitHub](https://github.com/keploy/keploy/issues) - For bug reports and feature requests.
 
